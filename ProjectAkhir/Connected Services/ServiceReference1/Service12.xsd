@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ServiceRS" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiceRS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TambahKaryawan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alamat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JenisKelamin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodeKaryawan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaKaryawan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NoHp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahKaryawan" nillable="true" type="tns:TambahKaryawan" />
+  <xs:complexType name="TambahApoteker">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alamat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JenisKelamin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodeApoteker" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaApoteker" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NoHp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahApoteker" nillable="true" type="tns:TambahApoteker" />
+  <xs:complexType name="TambahDokter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alamat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JenisKelamin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodeDokter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaDokter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NoHp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahDokter" nillable="true" type="tns:TambahDokter" />
+  <xs:complexType name="TambahPerawat">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alamat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JenisKelamin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodePerawat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaPerawat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NoHp" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahPerawat" nillable="true" type="tns:TambahPerawat" />
+  <xs:complexType name="TambahPasien">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alamat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="JenisKelamin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodePasien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaPasien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Umur" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahPasien" nillable="true" type="tns:TambahPasien" />
+  <xs:complexType name="TambahRI">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Biaya" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodeDokter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodeObat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodePasien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodePerawat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodeRI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodeRuangan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaDokter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaObat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaPasien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaPerawat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaRuangan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TglKeluar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TglMasuk" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahRI" nillable="true" type="tns:TambahRI" />
+  <xs:complexType name="TambahRJ">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Biaya" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodeDokter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodeObat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodePasien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodeRJ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaDokter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaObat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaPasien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TglPeriksa" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahRJ" nillable="true" type="tns:TambahRJ" />
+  <xs:complexType name="TambahRuangan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="KodeRuangan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaRuangan" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahRuangan" nillable="true" type="tns:TambahRuangan" />
+  <xs:complexType name="TambahObat">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="KodeObat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaObat" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahObat" nillable="true" type="tns:TambahObat" />
+  <xs:complexType name="TambahPemeriksaan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Diagnosa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Hasil" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodeDokter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodePasien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KodePemeriksaan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaDokter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaPasien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TglPeriksa" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahPemeriksaan" nillable="true" type="tns:TambahPemeriksaan" />
+  <xs:complexType name="TambahLoginKaryawan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="KodeKaryawan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaKaryawan" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahLoginKaryawan" nillable="true" type="tns:TambahLoginKaryawan" />
+  <xs:complexType name="TambahLoginDokter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="KodeDokter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaDokter" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahLoginDokter" nillable="true" type="tns:TambahLoginDokter" />
+  <xs:complexType name="TambahLoginApoteker">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="KodeApoteker" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NamaApoteker" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TambahLoginApoteker" nillable="true" type="tns:TambahLoginApoteker" />
+  <xs:complexType name="ClassLogin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClassLogin" nillable="true" type="tns:ClassLogin" />
+</xs:schema>

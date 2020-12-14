@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/IIS/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/IIS/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/IIS/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServiceRS" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_TambahDtKaryawan_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtKaryawan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtKaryawan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtKaryawanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtApoteker_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtApoteker" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtApoteker_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtApotekerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtDokter_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtDokter" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtDokter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtDokterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtPerawat_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtPerawat" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtPerawat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtPerawatResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtPasien_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtPasien" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtPasien_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtPasienResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtRawatInap_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtRawatInap" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtRawatInap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtRawatInapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtRawatJalan_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtRawatJalan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtRawatJalan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtRawatJalanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtRuangan_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtRuangan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtRuangan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtRuanganResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtObat_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtObat" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtObat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtObatResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtPemeriksaan_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtPemeriksaan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahDtPemeriksaan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahDtPemeriksaanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahLK_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahLK" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahLK_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahLKResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahLD_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahLD" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahLD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahLDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahLA_InputMessage">
+    <wsdl:part name="parameters" element="tns:TambahLA" />
+  </wsdl:message>
+  <wsdl:message name="IService1_TambahLA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TambahLAResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataLogin" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataLoginResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="TambahDtKaryawan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TambahDtKaryawan" message="tns:IService1_TambahDtKaryawan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TambahDtKaryawanResponse" message="tns:IService1_TambahDtKaryawan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtApoteker">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TambahDtApoteker" message="tns:IService1_TambahDtApoteker_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TambahDtApotekerResponse" message="tns:IService1_TambahDtApoteker_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtDokter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TambahDtDokter" message="tns:IService1_TambahDtDokter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TambahDtDokterResponse" message="tns:IService1_TambahDtDokter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtPerawat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TambahDtPerawat" message="tns:IService1_TambahDtPerawat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TambahDtPerawatResponse" message="tns:IService1_TambahDtPerawat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtPasien">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TambahDtPasien" message="tns:IService1_TambahDtPasien_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TambahDtPasienResponse" message="tns:IService1_TambahDtPasien_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtRawatInap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TambahDtRawatInap" message="tns:IService1_TambahDtRawatInap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TambahDtRawatInapResponse" message="tns:IService1_TambahDtRawatInap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtRawatJalan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TambahDtRawatJalan" message="tns:IService1_TambahDtRawatJalan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TambahDtRawatJalanResponse" message="tns:IService1_TambahDtRawatJalan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtRuangan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TambahDtRuangan" message="tns:IService1_TambahDtRuangan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TambahDtRuanganResponse" message="tns:IService1_TambahDtRuangan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtObat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TambahDtObat" message="tns:IService1_TambahDtObat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TambahDtObatResponse" message="tns:IService1_TambahDtObat_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtPemeriksaan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TambahDtPemeriksaan" message="tns:IService1_TambahDtPemeriksaan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TambahDtPemeriksaanResponse" message="tns:IService1_TambahDtPemeriksaan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahLK">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TambahLK" message="tns:IService1_TambahLK_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TambahLKResponse" message="tns:IService1_TambahLK_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahLD">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TambahLD" message="tns:IService1_TambahLD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TambahLDResponse" message="tns:IService1_TambahLD_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TambahLA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/TambahLA" message="tns:IService1_TambahLA_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/TambahLAResponse" message="tns:IService1_TambahLA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataLogin" message="tns:IService1_GetDataLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataLoginResponse" message="tns:IService1_GetDataLogin_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TambahDtKaryawan">
+      <soap:operation soapAction="http://tempuri.org/IService1/TambahDtKaryawan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtApoteker">
+      <soap:operation soapAction="http://tempuri.org/IService1/TambahDtApoteker" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtDokter">
+      <soap:operation soapAction="http://tempuri.org/IService1/TambahDtDokter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtPerawat">
+      <soap:operation soapAction="http://tempuri.org/IService1/TambahDtPerawat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtPasien">
+      <soap:operation soapAction="http://tempuri.org/IService1/TambahDtPasien" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtRawatInap">
+      <soap:operation soapAction="http://tempuri.org/IService1/TambahDtRawatInap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtRawatJalan">
+      <soap:operation soapAction="http://tempuri.org/IService1/TambahDtRawatJalan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtRuangan">
+      <soap:operation soapAction="http://tempuri.org/IService1/TambahDtRuangan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtObat">
+      <soap:operation soapAction="http://tempuri.org/IService1/TambahDtObat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahDtPemeriksaan">
+      <soap:operation soapAction="http://tempuri.org/IService1/TambahDtPemeriksaan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahLK">
+      <soap:operation soapAction="http://tempuri.org/IService1/TambahLK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahLD">
+      <soap:operation soapAction="http://tempuri.org/IService1/TambahLD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TambahLA">
+      <soap:operation soapAction="http://tempuri.org/IService1/TambahLA" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataLogin">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost/IIS/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
